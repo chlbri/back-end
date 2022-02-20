@@ -1,7 +1,7 @@
 {
-  "name": "gitpod-typescript",
+  "name": "back-end",
   "version": "0.0.1",
-  "description": "https://github.com/chlbri/gitpod-typescript.git",
+  "description": "https://github.com/chlbri/back-end.git",
   "author": "chlbri <bri_lvi@icloud.com>",
   "license": "MIT",
   "private": true,
@@ -24,10 +24,12 @@
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
+    "class-validator": "^0.13.2",
     "dayjs": "^1.10.7",
     "edit-json-file": "^1.7.0",
     "eslint": "^8.9.0",
     "faker": "^6.6.6",
+    "graphql": "^16.3.0",
     "immer": "^9.0.12",
     "jest": "^27.5.1",
     "jest-cucumber": "^3.0.1",
@@ -37,7 +39,13 @@
     "rimraf": "^3.0.2",
     "shelljs": "^0.8.5",
     "ts-jest": "^27.1.3",
+    "type-graphql": "^1.1.1",
     "typescript": "^4.5.5"
   },
-  "repository": "https://github.com/chlbri/gitpod-typescript.git"
+  "peerDependencies": {
+    "class-validator": "^0.13.2",
+    "graphql": "^16.3.0",
+    "type-graphql": "^1.1.1"
+  },
+  "repository": "https://github.com/chlbri/back-end.git"
 }
