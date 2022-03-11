@@ -1,5 +1,5 @@
 {
-  "name": "back-end",
+  "name": "@bemedev/back_end",
   "version": "0.0.1",
   "description": "https://github.com/chlbri/back-end.git",
   "author": "chlbri <bri_lvi@icloud.com>",
@@ -7,17 +7,12 @@
   "private": true,
   "scripts": {
     "tsc": "tsc",
-    "build": "yarn run tsc && yarn run lint",
+    "build": "pnpm run tsc && pnpm run lint",
     "test": "jest",
     "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
     "eslint": "eslint \"{src/**/*,App}.{ts,tsx}\"",
-    "lint": "yarn run prettier && yarn run eslint --fix",
-    "rm": "./node_modules/.bin/rimraf -rf node_modules yarn.lock",
-    "rinit": "yarn run rm && yarn cache clean && yarn run yarn",
-    "publish": "yarn run rm && yarn run clean && yarn run yarn",
-    "clean": "yarn cache clean",
-    "yarn": "yarn install",
-    "git-push": "git push --tags"
+    "lint": "pnpm run prettier && pnpm run eslint --fix",
+    "rm": "./node_modules/.bin/rimraf -rf node_modules pnpm-lock.yaml"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
